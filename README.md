@@ -2,8 +2,8 @@
 
 This is for the ESP32-S3 Development Board, with 1.28inch Round Touch LCD. Embedded GC9A01 Display Driver And CST816S Capacitive Touch Control Chip
 
-Product page (shop): https://www.waveshare.com/esp32-s3-touch-lcd-1.28.htm
-Wiki page: https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-1.28
+- Product page (shop): https://www.waveshare.com/esp32-s3-touch-lcd-1.28.htm
+- Wiki page: https://www.waveshare.com/wiki/ESP32-S3-Touch-LCD-1.28
 
 This repository is to share some notes of mine. Hope that helps not only me to make it reproduceable.
 
