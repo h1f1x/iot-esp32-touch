@@ -9,19 +9,19 @@ This repository is to share some notes of mine. Hope that helps not only me to m
 
 ## Prerequisites
 
-or what I am using.
+or what I am using or what this is tested with:
 
-- MS VSCode (1.88.1)
+- MS [VSCode](https://code.visualstudio.com/download) (1.88.1)
 - ESP-IDF Extension
 - MacOS (M1 with Sohoma 14.4.1)
 - USB-C cable
-- Python 3.11.3
+- Python 3.11.3 
 
 You might need the driver for the USB chip CH34X, https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html
 
 ### Installing the ESP-IDF
 
-Either install with the VSCode extension ("ESP-IDF Extension") or manually.
+Either install with the VSCode extension ("ESP-IDF Extension") or manually as described below.
 
 #### Manually
 
@@ -44,7 +44,7 @@ The last command (with the correct path) is needed everytime you want to use the
 
 Using the VSCode Extension, seems to be the most comfortable version. But here the manual instructions:
 
-Make sure exports for esp-idf are set. Test with: `idf.py --version`
+Make sure **exports** for esp-idf are set. Test with: `idf.py --version`
 
 Find your USB-C connected board like:
 
@@ -57,7 +57,7 @@ So in my case the device is available via `/dev/cu.wchusbserial57350172051`
 
 You can follow the https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/get-started/linux-macos-setup.html#configure-your-project
 
-Or TL;DR in the examples directory:
+Or TL;DR try in the examples directory:
 
 ```
 idf.py set-target esp32s3
@@ -71,7 +71,7 @@ If you get an error like:
 A fatal error occurred: Failed to write to target RAM (result was 01070000: Operation timed out)
 ```
 
-Install the CH34X driver. If the driver is correctly installed you should see `/dev/cu.wchusbserialXXXX` and `/dev/cu.usbserialXXXX`, where you should now use the prefixed one starting with: `wch`
+Install the CH34X driver! If the driver is correctly installed you should see `/dev/cu.wchusbserialXXXX` and `/dev/cu.usbserialXXXX`, where you should now use the prefixed one starting with: `wch`
 
 Monitoring and checking the output:
 
