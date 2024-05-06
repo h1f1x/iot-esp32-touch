@@ -88,3 +88,7 @@ idf.py -p /dev/cu.wchusbserial57350172051 monitor
 #### Running Python on it
 
 #### Using the display
+
+## More Links
+
+- https://www.bw38.de/esp32battery
